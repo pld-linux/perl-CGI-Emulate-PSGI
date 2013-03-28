@@ -8,13 +8,13 @@
 Summary:	CGI::Parse::PSGI - Parses CGI output and creates PSGI response out of it
 #Summary(pl.UTF-8):	
 Name:		perl-CGI-Emulate-PSGI
-Version:	0.14
+Version:	0.15
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CGI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	18f9297154b3b94bcc71a133b3f18b0d
+# Source0-md5:	3f0b6ae68d1e84e66ea8eb629e569284
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/CGI-Emulate-PSGI/
 BuildRequires:	perl-devel >= 1:5.8.0
