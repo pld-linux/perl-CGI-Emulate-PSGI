@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	CGI
 %define		pnam	Emulate-PSGI
 %include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Parse::PSGI - Parses CGI output and creates PSGI response out of it
-#Summary(pl.UTF-8):	
 Name:		perl-CGI-Emulate-PSGI
 Version:	0.15
 Release:	1
@@ -15,8 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CGI/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3f0b6ae68d1e84e66ea8eb629e569284
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/CGI-Emulate-PSGI/
+URL:		http://search.cpan.org/dist/CGI-Emulate-PSGI/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -26,15 +24,9 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-  use CGI::Parse::PSGI qw(parse_cgi_output);
+use CGI::Parse::PSGI qw(parse_cgi_output);
 
-  my $output = YourApp->run;
-  my $psgi_res = parse_cgi_output(\$output);
-
-
-
-# %description -l pl.UTF-8
-# TODO
+my $output = YourApp->run; my $psgi_res = parse_cgi_output(\$output);
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
