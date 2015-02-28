@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Parse::PSGI - Parses CGI output and creates PSGI response out of it
 Name:		perl-CGI-Emulate-PSGI
-Version:	0.15
+Version:	0.20
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CGI/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3f0b6ae68d1e84e66ea8eb629e569284
+# Source0-md5:	9a318c5fa2bcad36db83e575e86cf302
 URL:		http://search.cpan.org/dist/CGI-Emulate-PSGI/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
