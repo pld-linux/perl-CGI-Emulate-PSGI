@@ -4,7 +4,6 @@
 
 %define		pdir	CGI
 %define		pnam	Emulate-PSGI
-%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::Parse::PSGI - Parses CGI output and creates PSGI response out of it
 Name:		perl-CGI-Emulate-PSGI
 Version:	0.23
